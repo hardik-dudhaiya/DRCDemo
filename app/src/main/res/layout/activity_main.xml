@@ -27,13 +27,16 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:text="DOYEONA"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
         app:layout_constraintBottom_toBottomOf="@id/ivProfileImage"
         app:layout_constraintStart_toEndOf="@id/ivProfileImage"
         app:layout_constraintTop_toTopOf="@id/ivProfileImage" />
@@ -43,31 +46,30 @@
         android:id="@+id/tvPercentage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0%"
-        android:textColor="@color/black"
+        android:textColor="?colorPrimary"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ivProfileImage" />
 
-   <com.google.android.material.progressindicator.LinearProgressIndicator
-       android:id="@+id/pgTaskProgress"
-       android:layout_width="match_parent"
-       android:layout_height="30dp"
-       app:layout_constraintEnd_toEndOf="parent"
-       app:layout_constraintStart_toStartOf="parent"
-       android:layout_marginTop="50dp"
-       android:layout_marginStart="40dp"
-       android:layout_marginEnd="40dp"
-       app:trackThickness="13dp"
-       app:trackCornerRadius="6dp"
-       android:indeterminate="false"
-       app:trackColor="#888888"
-       android:progress="20"
-       android:max="100"
-       app:indicatorColor="@color/black"
-       app:layout_constraintTop_toBottomOf="@id/tvPercentage"/>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/pgTaskProgress"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:trackThickness="13dp"
+        app:trackCornerRadius="6dp"
+        android:indeterminate="false"
+        app:trackColor="#22DCDCDC"
+        android:progress="20"
+        android:max="100"
+        app:indicatorColor="?colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/tvPercentage"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTasks"

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">DRCDemo</string>
+    <string name="choose_your_own_theme_color">Choose your own theme color</string>
+    <string name="save">save</string>
+    <string name="alert_will_gives_you_a_notification_at_exact_time">Alert will gives you a notification at exact time</string>
+    <string name="please_enter_task_detail_here">Please Enter task detail here</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
 </resources>
